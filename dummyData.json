@@ -1,0 +1,108 @@
+{
+  "Slides": [
+    {
+      "Seq": 1,
+      "backgroundColor": "red",
+      "onClick": "https://kennect.io/",
+      "backgroundImage": "https://picsum.photos/200/300.jpg",
+      "Boxes": [
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        }
+      ]
+    },
+    {
+      "Seq": 2,
+      "backgroundColor": "red",
+      "onClick": "https://kennect.io/",
+      "backgroundImage": "https://picsum.photos/200/300.jpg",
+      "Boxes": [
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        }
+      ]
+    },
+    {
+      "Seq": 3,
+      "backgroundColor": "red",
+      "onClick": "https://kennect.io/",
+      "backgroundImage": "https://picsum.photos/200/300.jpg",
+      "Boxes": [
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        }
+      ]
+    }
+  ]
+}

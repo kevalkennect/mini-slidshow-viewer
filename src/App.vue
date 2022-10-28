@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="main">
+    <json-file-input />
+    <div v-if="Object.keys(currentSlide).length !== 0">
+      <!-- slider -->
+      <SlideShower />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { mapActions, mapGetters } from "vuex";
+import JsonFileInput from "./components/JsonFileInput.vue";
+import SlideShower from "./components/SlideShower.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    JsonFileInput,
+    SlideShower,
+  },
+  computed: { ...mapGetters(["activeSlide", "currentSlide"]) },
+  methods: {
+    ...mapActions(["nextSlide", "prevSlide", "setSlides", "setCurrentSlide"]),
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
 }
 </style>
