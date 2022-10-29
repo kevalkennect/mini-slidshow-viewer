@@ -57,6 +57,9 @@ const getters = {
   currentSlide(state) {
     return state.currentSlide;
   },
+  getLength(state) {
+    return state.slides.length;
+  },
 };
 
 // A Vuex instance is created by combining the state, mutations, actions,

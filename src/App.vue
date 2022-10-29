@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <json-file-input />
-    <div v-if="Object.keys(currentSlide).length !== 0">
+    <div >
       <!-- slider -->
       <SlideShower />
     </div>

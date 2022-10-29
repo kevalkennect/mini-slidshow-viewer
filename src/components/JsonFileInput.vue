@@ -8,7 +8,7 @@
 import { mapActions } from "vuex";
 export default {
   methods: {
-    ...mapActions(["set"]),
+    ...mapActions(["setSlides"]),
     onFileChange(e) {
 
       let files = e.target.files || e.dataTransfer.files;

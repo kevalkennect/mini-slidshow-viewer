@@ -1,16 +1,22 @@
 <template>
   <div class="wraper">
-    <button @click="prevSlide">Previous</button>
-    <button @click="nextSlide">Next</button>
+    <button @click="prevSlide" :disabled="isDisablePrev">Previous</button>
+    <button @click="nextSlide" :disabled="isDisableNext">Next</button>
   </div>
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 export default {
+  props: ["isDisablePrev", "isDisableNext"],
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapGetters(["getLength", "activeSlide"]),
+  },
   methods: {
     ...mapActions(["nextSlide", "prevSlide", "setSlides", "setCurrentSlide"]),
-    
   },
 };
 </script>
@@ -25,8 +31,8 @@ export default {
 
 button {
   height: 30px;
-  border-radius: 4px;
-  border: none;
+  /* border-radius: 4px; */
+  /* border: none; */
   width: 100px;
   cursor: pointer;
 }
