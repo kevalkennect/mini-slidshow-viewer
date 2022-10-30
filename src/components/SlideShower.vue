@@ -4,13 +4,13 @@
       class="main"
       :style="{
         backgroundColor:
-          currentSlide.backgroundImage !== ''
+          currentSlide.backgroundImage && currentSlide.backgroundImage !== ''
             ? 'none'
             : currentSlide.backgroundColor,
         'background-image':
-          'url(' + currentSlide.backgroundImage && currentSlide.backgroundImage
-            ? currentSlide.backgroundImage
-            : '' + ')',
+          currentSlide.backgroundImage && currentSlide.backgroundImage
+            ? 'url(' + currentSlide.backgroundImage + ')'
+            : 'none',
       }"
       @click="click(currentSlide.onClick)"
     >
@@ -18,16 +18,12 @@
         This Slide Number is Prime Number
       </div>
       <div class="warper">
-        <div
-          class="box"
+        Slide Number {{ currentSlide.Seq }}
+        <BoxContainer
           v-for="box in currentSlide.Boxes"
           :key="box"
-          :style="{}"
-        >
-          <div class="text">
-            {{ box.content }}
-          </div>
-        </div>
+          :data="box"
+        />
       </div>
     </div>
     <!-- box component -->
@@ -42,6 +38,7 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
+import BoxContainer from "./BoxContainer.vue";
 import NavigationBtn from "./NavigationBtn.vue";
 
 export default {
@@ -52,7 +49,7 @@ export default {
       isPrimeNum: false,
     };
   },
-  components: { NavigationBtn },
+  components: { NavigationBtn, BoxContainer },
   computed: {
     ...mapGetters(["activeSlide", "currentSlide", "getLength"]),
   },
@@ -97,11 +94,15 @@ export default {
   position: absolute;
   right: 0;
   top: 0;
+  color: white;
 }
 .warper {
+  color: white;
   height: 100%;
   width: 100%;
-  background-color: grey;
+  position: relative;
+  padding: 5px;
+  /* background-color: grey; */
 }
 .text {
   width: 100%;
@@ -124,6 +125,8 @@ export default {
   background-position: center;
   background-size: cover;
   position: relative;
+  border-radius: 10px;
+
   /* border: 2px solid red; */
 }
 .container {
@@ -132,6 +135,7 @@ export default {
   flex-direction: column;
   height: 400px;
   position: relative;
+  padding: 10px;
   /* border: 2px solid yellow; */
 }
 </style>

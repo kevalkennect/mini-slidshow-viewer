@@ -13,7 +13,7 @@
           "Formatting": {
             "Bold": true,
             "textSize": "20",
-            "font": "funny"
+            "font": "Times New Roman"
           }
         },
         {
@@ -21,9 +21,9 @@
           "X": "centre",
           "Y": "Top",
           "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
+            "Bold": false,
+            "textSize": "10",
+            "font": "Lucida Console"
           }
         }
       ]
@@ -58,7 +58,102 @@
     },
     {
       "Seq": 3,
+      "backgroundColor": "green",
+      "onClick": "https://kennect.io/",
+      "Boxes": [
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "bottom",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "20",
+            "font": "funny"
+          }
+        }
+      ]
+    },
+    {
+      "Seq": 4,
       "backgroundColor": "blue",
+      "onClick": "https://kennect.io/",
+      "backgroundImage": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "Boxes": [
+        {
+          "content": "New Text",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "40",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "New Text 2",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": false,
+            "textSize": "8",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "New Text 3",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": true,
+            "textSize": "12",
+            "font": "funny"
+          }
+        },
+        {
+          "content": "India in 2009",
+          "X": "centre",
+          "Y": "Top",
+          "Formatting": {
+            "Bold": false,
+            "textSize": "15",
+            "font": "funny"
+          }
+        }
+      ]
+    },
+    {
+      "Seq": 5,
+      "backgroundColor": "black",
       "onClick": "https://kennect.io/",
       "Boxes": [
         {
@@ -104,8 +199,8 @@
       ]
     },
     {
-      "Seq": 3,
-      "backgroundColor": "blue",
+      "Seq": 6,
+      "backgroundColor": "yellow",
       "onClick": "https://kennect.io/",
       "Boxes": [
         {
@@ -151,8 +246,8 @@
       ]
     },
     {
-      "Seq": 3,
-      "backgroundColor": "blue",
+      "Seq": 7,
+      "backgroundColor": "red",
       "onClick": "https://kennect.io/",
       "Boxes": [
         {
@@ -198,102 +293,8 @@
       ]
     },
     {
-      "Seq": 3,
-      "backgroundColor": "blue",
-      "onClick": "https://kennect.io/",
-      "Boxes": [
-        {
-          "content": "India in 2009",
-          "X": "centre",
-          "Y": "Top",
-          "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
-          }
-        },
-        {
-          "content": "India in 2009",
-          "X": "centre",
-          "Y": "Top",
-          "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
-          }
-        },
-        {
-          "content": "India in 2009",
-          "X": "centre",
-          "Y": "Top",
-          "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
-          }
-        },
-        {
-          "content": "India in 2009",
-          "X": "centre",
-          "Y": "Top",
-          "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
-          }
-        }
-      ]
-    },
-    {
-      "Seq": 3,
-      "backgroundColor": "blue",
-      "onClick": "https://kennect.io/",
-      "Boxes": [
-        {
-          "content": "India in 2009",
-          "X": "centre",
-          "Y": "Top",
-          "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
-          }
-        },
-        {
-          "content": "India in 2009",
-          "X": "centre",
-          "Y": "Top",
-          "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
-          }
-        },
-        {
-          "content": "India in 2009",
-          "X": "centre",
-          "Y": "Top",
-          "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
-          }
-        },
-        {
-          "content": "India in 2009",
-          "X": "centre",
-          "Y": "Top",
-          "Formatting": {
-            "Bold": true,
-            "textSize": "20",
-            "font": "funny"
-          }
-        }
-      ]
-    },
-    {
-      "Seq": 3,
-      "backgroundColor": "blue",
+      "Seq": 8,
+      "backgroundColor": "pink",
       "onClick": "https://kennect.io/",
       "Boxes": [
         {
