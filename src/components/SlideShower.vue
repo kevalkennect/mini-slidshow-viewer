@@ -22,7 +22,7 @@
         <BoxContainer
           v-for="box in currentSlide.Boxes"
           :key="box"
-          :data="box"
+          :BoxData="box"
         />
       </div>
     </div>
@@ -101,7 +101,7 @@ export default {
   height: 100%;
   width: 100%;
   position: relative;
-  padding: 5px;
+  /* padding: 5px; */
   /* background-color: grey; */
 }
 .text {

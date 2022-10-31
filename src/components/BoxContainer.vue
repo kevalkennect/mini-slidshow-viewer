@@ -2,27 +2,99 @@
   <div
     class="box-container"
     :style="{
-      fontWeight: data.Formatting.Bold ? 'bold' : 'normal',
-      fontSize: data.Formatting.textSize
-        ? `${+data.Formatting.textSize}px`
+      fontWeight: BoxData.Formatting.Bold ? 'bold' : 'normal',
+      fontSize: BoxData.Formatting.textSize
+        ? `${+BoxData.Formatting.textSize}px`
         : '',
-      fontFamily: data.Formatting.font ? data.Formatting.font : '',
+      fontFamily: BoxData.Formatting.font ? BoxData.Formatting.font : '',
+      ...css,
     }"
   >
-    {{ data.content }}
+    {{ BoxData.content }}
   </div>
 </template>
 
 <script>
 export default {
-  props: ["data"],
+  props: ["BoxData"],
+  data() {
+    return {
+      css: {},
+    };
+  },
+  created() {
+    let a = this.getPosition(
+      this.BoxData.X.toLowerCase(),
+      this.BoxData.Y.toLowerCase()
+    );
+    console.log("a ==>", a);
+    this.css = a;
+  },
 
-  computed: {
-    // calcXandY() {
-    //   let obj = {};
-    //   const { X, Y } = this.data;
-    //   if(X == 'center')
-    // },
+  methods: {
+    getPosition(x, y) {
+      if (x === "left" && y === "top") {
+        return {
+          top: "0",
+          left: "0",
+        };
+      }
+      if (x === "left" && y === "center") {
+        return {
+          left: "0",
+          top: "50%",
+          bottom: "50%",
+        };
+      }
+      if (x === "left" && y === "bottom") {
+        return {
+          left: "0",
+          bottom: "0",
+        };
+      }
+      if (x === "center" && y === "top") {
+        console.log("yes ==>", x, y);
+        return {
+          right: "50%",
+          left: "50%",
+          top: "0",
+        };
+      }
+      if (x === "center" && y === "center") {
+        return {
+          right: "50%",
+          left: "50%",
+          top: "50%",
+          bottom: "50%",
+        };
+      }
+      if (x === "center" && y === "bottom") {
+        return {
+          right: "50%",
+          left: "50%",
+          bottom: "0",
+        };
+      }
+      if (x === "right" && y === "top") {
+        return {
+          right: "0",
+          top: "0",
+        };
+      }
+      if (x === "right" && y === "center") {
+        return {
+          right: "0",
+          top: "50%",
+          bottom: "50%",
+        };
+      }
+      if (x === "right" && y === "bottom") {
+        return {
+          right: "0",
+          bottom: "0",
+        };
+      }
+    },
   },
 };
 </script>
@@ -30,5 +102,6 @@ export default {
 <style scoped>
 .box-container {
   color: white;
+  position: absolute;
 }
 </style>
