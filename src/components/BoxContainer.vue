@@ -101,7 +101,9 @@ export default {
 
 <style scoped>
 .box-container {
+  width: fit-content;
   color: white;
   position: absolute;
+  white-space: nowrap
 }
 </style>

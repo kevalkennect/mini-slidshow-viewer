@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    Slide Number {{ currentSlide.Seq }}
     <div
       class="main"
       :style="{
@@ -18,7 +19,6 @@
         This Slide Number is Prime Number
       </div>
       <div class="warper">
-        Slide Number {{ currentSlide.Seq }}
         <BoxContainer
           v-for="box in currentSlide.Boxes"
           :key="box"
@@ -120,22 +120,18 @@ export default {
 }
 .main {
   height: 100%;
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   border-radius: 10px;
-
-  /* border: 2px solid red; */
+  padding: 20px;
 }
 .container {
-  /* height: 60vh; */
   display: flex;
   flex-direction: column;
-  height: 400px;
-  position: relative;
-  padding: 10px;
+  height: 500px;
+  padding: 40px;
   /* border: 2px solid yellow; */
 }
 </style>
